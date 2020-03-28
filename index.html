@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Konwersja tekstu</title>
+		<script type="text/javascript" launguage="javascript" src="./index.js"></script>
+		<style>
+			#input {
+				border: 1px solid black;
+				font-family: arial;
+			}
+			body {
+				font-family: arial;
+			}
+		</style>
+	</head>
+	<body onload="conv()">
+		<h2>Przygotowanie tekstu do czytania terapeutycznego</h2>
+		Wytłuszczenie samogłosek    <input type="checkbox" id="bold" onchange="conv()"><br>
+		Wytłuszczenie pierwszej głoski w wyrazie    <input type="text" id="cap" onkeyup="conv()" onkeydown="conv()" placeholder="Wpisz głoskę"><br>
+		<textarea id="input" rows="15" cols="150" onkeyup="conv()" onkeydown="conv()" autocomplete="false" spellcheck="false">Wpisz lub wklej tekst</textarea>
+		<h3>Tekst do czytania terapeutycznego:</h3>
+		<p id="output" style="border: 1px solid black;font-family: arial;">
+		</p>
+	</body>
+</html>
